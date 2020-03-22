@@ -1,6 +1,6 @@
 {
   "name": "@mono/main",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mono/logger": "^1.1.0",
+    "@mono/logger": "^1.1.1",
     "@mono/math": "^1.1.0",
     "ramda": "^0.27.0"
   }
