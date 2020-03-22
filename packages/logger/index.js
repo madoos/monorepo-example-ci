@@ -5,12 +5,12 @@ const { parse, stringify } = JSON
 const isJSON = tryCatch(parse, F)
 
 // parseObject :: a -> String | a
-const parseObject = ifElse(isJSON,  partialRight(parse, [null, 2]), identity)
+const parseObject = ifElse(isJSON,  partialRight(stringify, [null, 2]), identity)
 
 // log :: String -> a -> ()
 const log = curry((tag, data) => console.log(
     tag, 
-    data
+    parseObject(data)
 ))
 
 module.exports = {
